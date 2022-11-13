@@ -1,0 +1,110 @@
+{
+	"Id": "DannyWind-WelcomePage.XKCDPlugin",
+	"Name": "DannyWind Welcome Page XKCD Plugin",
+	"Version": "1",
+	"Description": "Welcome Page XKCD Plugin for Delphi 11.2 Alexandria",
+	"Vendor": "DannyWind",
+	"VendorUrl": "https:\/\/dannywind.nl",
+	"Image": "https:\/\/avatars.githubusercontent.com\/u\/78543577",
+	"Tags": "DannyWind",
+	"License": "https:\/\/github.com\/DannyWindnl\/WelcomePage.XKCDPlugin\/raw\/main\/LICENSE",
+      "Url": "https:\/\/github.com\/DannyWindnl\/WelcomePage.XKCDPlugin\/raw\/main\/WelcomePage.XKCDPlugin-0.0.0.zip",
+	"ProjectUrl": "https:\/\/github.com\/DannyWindnl\/WelcomePage.XKCDPlugin",
+	"Modified": "2022-09-19 16:42:00",
+	"LicenseName": "CC0-1.0 license",
+	"TargetPath": "",
+	"RequireElevation": "0",
+	"AllUsers": "1",
+	"Actions": [
+		{
+			"Id": "1",
+			"ActionId": "6",
+			"Type": "2",
+			"RequireElevation": "0",
+			"Parameter": [
+				{
+					"Parameter": "WelcomePage.XKCDPlugin-0.0.0\\WP.XKCDPlugin.dproj"
+				},
+				{
+					"Parameter": "Win32"
+				},
+				{
+					"Parameter": "Release"
+				}
+			],
+			"ActionName": "CompileProject",
+			"Description": "Compile WP.XKCDPlugin.dproj"
+		},
+		{
+			"Id": "4",
+			"ActionId": "7",
+			"Type": "3",
+			"RequireElevation": "0",
+			"Parameter": [
+				{
+					"Parameter": "WP.XKCDPlugin.bpl"
+				}
+			],
+			"ActionName": "InstallPackage",
+			"Description": "Installs WP.XKCDPlugin.bpl package"
+		},
+		{
+			"Id": "5",
+			"ActionId": "1",
+			"Type": "3",
+			"RequireElevation": "0",
+			"Parameter": [
+				{
+					"Parameter": "WelcomePage.XKCDPlugin-0.0.0\\"
+				},
+				{
+					"Parameter": "cPasLibraryPath"
+				},
+				{
+					"Parameter": "Delphi.Personality"
+				},
+				{
+					"Parameter": "Win32"
+				}
+			],
+			"ActionName": "AddOptionPath",
+			"Description": "Add library path for Delphi"
+		},
+		{
+			"Id": "14",
+			"ActionId": "8",
+			"Type": "5",
+			"RequireElevation": "0",
+			"Parameter": [
+				{
+					"Parameter": "WP.XKCDPlugin.bpl"
+				}
+			],
+			"ActionName": "UninstallPackage",
+			"Description": "Uninstalls WP.XKCDPlugin.bpl package"
+		},
+		{
+			"Id": "15",
+			"ActionId": "2",
+			"Type": "5",
+			"RequireElevation": "0",
+			"Parameter": [
+				{
+					"Parameter": "WelcomePage.XKCDPlugin-0.0.0\\"
+				},
+				{
+					"Parameter": "cPasLibraryPath"
+				},
+				{
+					"Parameter": "Delphi.Personality"
+				},
+				{
+					"Parameter": "Win32"
+				}
+			],
+			"ActionName": "RemoveOptionPath",
+			"Description": "Remove library path for Delphi"
+		}
+
+	]
+}
